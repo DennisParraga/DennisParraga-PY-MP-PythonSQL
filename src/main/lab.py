@@ -24,7 +24,4 @@ def insert_dog(name, breed, age):
 # TODO: Complete select_all_dogs() by selecting all rows from the "dogs" table *and returning them*.
 def select_all_dogs():
     res = cursor.execute("SELECT * FROM dogs")
-    # return the rows
-    # cursor.fetchall()
-    # print(cursor.fetchall())
     return res.fetchall()
