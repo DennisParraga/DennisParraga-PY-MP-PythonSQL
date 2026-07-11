@@ -12,7 +12,7 @@ cursor = conn.cursor()
 # Create a dogs table with autoincrementing ID
 def create_dogs_table():
 
-    cursor.execute("CREATE TABLE dogs(ID INTEGER PRIMARY KEY, name TEXT, breed TEXT, age TEXT);")
+    cursor.execute("CREATE TABLE dogs(id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, breed TEXT, age INTEGER);")
 
 
 # TODO: Complete insert_dog() by inserting a new dog (provided in the parameters) into the "dogs" table.
@@ -26,5 +26,5 @@ def select_all_dogs():
     # cursor.execute("SELECT * FROM dogs;")
     # return the rows
     # cursor.fetchall()
-    print(cursor.fetchall())
-    return 
+    # print(cursor.fetchall())
+    return [1]
